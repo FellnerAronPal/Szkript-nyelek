@@ -26,5 +26,9 @@ def ask():
     operand2 = int(text)
     return operand1, l_operator, operand2
 
+# op1, operator, op2 = ask()
+# result = secret_logic.calculate(op1, operator, op2)
 
-op1, operator, op2 = ask()
+result = secret_logic.calculate(*ask())
+print(f"result: {result}")
+exit(0)
