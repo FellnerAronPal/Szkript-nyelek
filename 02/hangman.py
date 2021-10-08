@@ -1,4 +1,4 @@
-from  typing import List
+from typing import List
 
 
 def get_all_index(text: str, word: str) -> List[int]:
