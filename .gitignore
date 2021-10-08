@@ -1,5 +1,5 @@
 ../env
 .idea/
 
-Pipfile.txt
+Pipfile.lock
 *.log
