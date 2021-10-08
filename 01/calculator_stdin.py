@@ -36,5 +36,6 @@ def get_inputs():
         result = secret_logic.calculate(operand1, operator, operand2)
         print(f"result: {result}")
 
+
 get_inputs()
 exit(0)

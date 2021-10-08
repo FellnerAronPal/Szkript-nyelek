@@ -7,6 +7,7 @@ def print_usage_and_exit():
     print("calculator app. usage: OPERAND OPERATOR OPERAND. fe. 3 + 4")
     exit(-1)
 
+
 def get_inputs():
     if len(sys.argv) != 4:
         print_usage_and_exit()
