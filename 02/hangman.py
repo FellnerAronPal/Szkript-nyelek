@@ -1,6 +1,7 @@
+from  typing import List
 
 
-def get_all_index(text, word):
+def get_all_index(text: str, word: str) -> List[int]:
     # return [i for i, letter in enumerate(word) if letter == text]
     found_index = []
     for i in range(len(word)):
@@ -12,7 +13,7 @@ def get_all_index(text, word):
 # 2. e -> xellx
 
 
-def get_new_masked_word(masked_word, word, indexes):
+def get_new_masked_word(masked_word: str, word: str, indexes: List[int]) -> str:
     new_masked_word = list(masked_word)
 
     for step in range(len(word)):
@@ -22,22 +23,22 @@ def get_new_masked_word(masked_word, word, indexes):
     return "".join(new_masked_word)
 
 
-def lost():
+def lost() -> None:
     print("Sorry , U have lost")
     exit(1)
 
 
-def win():
+def win() -> None:
     print("Congratulation, U have won")
     exit(0)
 
 
-def new_guess(guess, word, masked_word):
+def new_guess(guess: str, word: str, masked_word: str) -> str:
     index_list = get_all_index(guess, word)
     return get_new_masked_word(masked_word, word, index_list)
 
 
-def handle_final_guess(text, word):
+def handle_final_guess(text: str, word: str) -> None:
     if text == word:
         win()
     else:
