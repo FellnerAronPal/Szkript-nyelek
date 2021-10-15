@@ -29,6 +29,7 @@ def ask():
 # op1, operator, op2 = ask()
 # result = secret_logic.calculate(op1, operator, op2)
 
+
 result = secret_logic.calculate(*ask())
 print(f"result: {result}")
 exit(0)
